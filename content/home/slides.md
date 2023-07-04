@@ -52,7 +52,7 @@ Extensions meant to be pursued in the project:
 
 ---
 
-## Bridge the gap between simulation and real world
+# Bridge the gap between simulation and real world
 
 {{% multicol %}}
 {{% col %}}
@@ -70,7 +70,7 @@ Extensions meant to be pursued in the project:
 
 ---
 
-## Engineering data stream on the continuum
+# Engineering data stream on the continuum
 
 {{% multicol %}}
 
