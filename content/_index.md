@@ -1,8 +1,8 @@
  
 +++
 
-title = "Guide for writing markdown slides"
-description = "A Hugo theme for creating Reveal.js presentations"
+title = "PhD Programme -- XXXIX"
+description = "PhD Programme -- XXXIX"
 outputs = ["Reveal"]
 aliases = [
     "/guide/"
