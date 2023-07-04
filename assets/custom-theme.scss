@@ -27,22 +27,22 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono');
 // @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono');
 
-// $backgroundColor: #fff;
+$backgroundColor: #fff;
 
-// $mainColor: #000;
-// $headingColor: #111;
+$mainColor: #000;
+$headingColor: #111;
 
-$mainFontSize: 2em;
+$mainFontSize: 1.5em;
 // $mainFont: 'Roboto', sans-serif;
 // $headingFont: 'Roboto', sans-serif;
 // $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
 // $headingFont: 'Source Sans Pro', Helvetica, sans-serif;
 // $mainFont: 'Ubuntu';
 // $headingFont: 'Ubuntu';
-$mainFont: 'Signika Negative';
-$headingFont: 'Signika Negative';
-// $mainFont: 'Open Sans';
-// $headingFont: 'Open Sans';
+// $mainFont: 'Signika Negative';
+// $headingFont: 'Signika Negative';
+$mainFont: 'Open Sans';
+$headingFont: 'Open Sans';
 
 $headingLetterSpacing: normal;
 $headingFontWeight: 600;
@@ -61,6 +61,10 @@ section.has-light-background {
 	&, h1, h2, h3, h4, h5, h6 {
 		color: #222;
 	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: none !important;
 }
 
 .reveal pre {
@@ -184,4 +188,33 @@ section.has-light-background {
 	font-weight: bold;
 	border-width: 0.1em;
 	border-style: none;
+}
+
+.multiCol {
+	display: flex;
+}
+
+.col {
+	flex: 1;
+	padding: 0.9em;
+	text-align: left;
+	align-self: center;
+
+	figure {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+		/* align horizontal */
+		align-items: center;
+		/* align vertical */
+	}
+
+	figcaption p {
+		font-size: 0.5em;
+	}
+}
+
+li:not(:last-child) {
+    margin-bottom: 1.3em;
 }
