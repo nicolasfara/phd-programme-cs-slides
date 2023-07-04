@@ -4,9 +4,12 @@ weight = 1
 
 # Context
 
----
+- Modern **CPS** are characterized by a _high heterogeneity_ in terms of devices, communication technologies, and infrastructure
+- The _edge-cloud continuum_ is a promising solution to address the _scalability_ and _dynamicity_
+- Complexity of the system is increasing, and the _engineering_ of such systems is becoming a challenge
+- Many approaches are proposed in the literature: **pulverisation** is one of them in the context of _Collective Adaptive Systems_
 
-{{% section %}}
+---
 
 # Project description
 
@@ -83,8 +86,6 @@ Extensions meant to be pursued in the project:
 
 {{% /col %}}
 {{% /multicol %}}
-
-{{% /section %}}
 
 ---
 
