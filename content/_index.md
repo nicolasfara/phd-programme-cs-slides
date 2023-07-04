@@ -12,6 +12,6 @@ aliases = [
 
 # Engineering Reconfigurable Collective Systems in Cloud-Edge Environments
 
---
+&mdash;
 
-### Nicolas Farabegoli
+#### Nicolas Farabegoli
