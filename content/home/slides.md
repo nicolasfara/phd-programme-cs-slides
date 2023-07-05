@@ -59,32 +59,39 @@ weight = 1
 
 # Extends the Pulverisation approach
 
-**Pulverisation** approach for engineering collective systems by neatly separate the _business logic_ from _deployment aspects_.
-
+**Pulverisation** approach for engineering collective systems by neatly separate the _business logic_ from _deployment aspects_.  
 A (logical) _device_ is decomposed into **five** components that can be _independently_ deployed in the infrastructure.
 
 {{% multicol %}}
 
 {{% col %}}
 
-Extensions meant to be pursued in the project:
+<!-- Extensions meant to be pursued in the project: -->
 
-- Support _Dynamic renfiguration_ of the system:
-    * **Rules-based**: a priori defined rules based on well-known patterns
-    * **AI-based**: policy learned during the system execution to adapt the system to specific _QoS_ requirements
-- Support _openness_: allow the system to adapt to the add of new devices and infrastructure nodes
+### Rule-based reconfiguration
+
+- Define reconfiguration rules that can _move_ components into different infrastructure nodes.
+- Suitable for a priori defined rules based on _well-known patterns_ and _specific conditions_ known at design time.
+
+### AI-based reconfiguration
+
+- _Dynamic reconfiguration_ based on _AI_ techniques (e.g., _reinforcement learning_).
+- _Distributed intelligence_ from two differen perspective: **Application** level, **Infrastructural** level
+- Suitable for scenarios where the context is _dynamic_ and _unpredictable_ but **QoS** metrics are known
+- More general an potentially _more effective_ than rule-based reconfiguration
+
 {{% /col %}}
 
 {{% col %}}
 
-{{< figure src="images/pulverization-model.svg" width="60%" >}}
+{{< figure src="images/pulverization-model.svg" width="70%" >}}
 
 {{% multicol %}}
 {{% col %}}
-{{< figure src="images/cloud.svg" width="50%" caption="<b>Edge-cloud</b> deployment" >}}
+{{< figure src="images/cloud.svg" width="60%" caption="<b>Edge-cloud</b> deployment" >}}
 {{% /col %}}
 {{% col %}}
-{{< figure src="images/peer-to-peer.svg" width="50%" caption="<b>Peer-to-peer</b> deployment" >}}
+{{< figure src="images/peer-to-peer.svg" width="60%" caption="<b>Peer-to-peer</b> deployment" >}}
 {{% /col %}}
 {{% /multicol %}}
 
