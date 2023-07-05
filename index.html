@@ -82,7 +82,7 @@ A (logical) <em>device</em> is decomposed into <strong>five</strong> components 
 <li><em>Dynamic reconfiguration</em> based on <em>AI</em> techniques (e.g., <em>reinforcement learning</em>).</li>
 <li><em>Distributed intelligence</em> from two differen perspective: <strong>Application</strong> level, <strong>Infrastructural</strong> level</li>
 <li>Suitable for scenarios where the context is <em>dynamic</em> and <em>unpredictable</em> but <strong>QoS</strong> metrics are known</li>
-<li>More general an potentially <em>more effective</em> than rule-based reconfiguration</li>
+<li>More general and potentially <em>more effective</em> than rule-based reconfiguration</li>
 </ul>
 </div>
 <div class="col "><figure><img src="images/pulverization-model.svg" width="70%">
@@ -100,15 +100,18 @@ A (logical) <em>device</em> is decomposed into <strong>five</strong> components 
 </div>
 </div>
 </div>
+<p><strong>Dynamic reconfiguration</strong> is a key aspect for <em>energy efficiency</em>, <em>carbon footprint</em> reduction, and <em>QoS</em> improvement.</p>
 </section><section>
 <h1 id="bridge-the-gap-between-simulation-and-real-world">Bridge the gap between simulation and real world</h1>
 <div class="multiCol ">
 <div class="col "><ul>
-<li><strong>Pulverisation framework</strong>: concretize the pulverisation approach via a dedicated framework</li>
-<li>Framework <em>integration</em> with simulator(s): allow to simulate the system before its deployment</li>
-<li><em>Methodology</em> and <em>techniques</em>: provide a full-stack solution to engineer CAS effectively</li>
-<li><em>Relevant scenarios</em>: identify and study relevant scenarios and case studies where the approach can be applied (wearable devices, smart cities, etc.)</li>
+<li>Prototype a framework supporting the <em>pulverisation</em> approach</li>
+<li>Integration of the framework with <em>simulators</em> to allow to simulate the system before its deployment</li>
+<li>Provide a <em>methodology</em> and <em>techniques</em> for a full-stack solution to engineer CAS effectively</li>
 </ul>
+<p>In many applicative scenrios like <em>smart cities</em>, <em>ambient intelligence</em>, <em>building automation</em> and so on,
+the unpredictable nature of the environment makes it difficult to <em>predict</em> the behavior of the system.</p>
+<p>For this reason, having a full-stack solution that enable to <em>simulate</em> the system before its deployment could be strategic.</p>
 </div>
 <div class="col "><figure><img src="images/phd-proposal.drawio.png" width="80%">
 </figure>
@@ -120,7 +123,7 @@ A (logical) <em>device</em> is decomposed into <strong>five</strong> components 
 <div class="col "><ul>
 <li><em>IoT</em> devices generate a huge amount of <strong>data</strong> from many different sources</li>
 <li>The <em>efficient</em> and <em>effective</em> management of data streams is an open issue, especially in <em>edge-cloud</em> environments</li>
-<li>Engineer the <em>data stream</em> on the continuum to enable external data analysis (i.e. with big-data techniques)</li>
+<li>Engineer the <em>data stream</em> on the continuum to provide more effective big-data storage/analysis but also control to distributed actuators</li>
 </ul>
 </div>
 <div class="col "><figure><img src="images/data-stream.drawio.png">
@@ -130,10 +133,11 @@ A (logical) <em>device</em> is decomposed into <strong>five</strong> components 
 </section><section>
 <h1 id="expected-results">Expected results</h1>
 <ul>
-<li><strong>Pulverisation framework</strong>: concretize the pulverisation approach via a dedicated <em>framework</em></li>
-<li><strong>Rule-based</strong> and <strong>AI-based</strong> dynamic <em>reconfiguration</em> of the system</li>
-<li><strong>Data stream engineering</strong> on the continuum</li>
-<li><strong>Integration with CAS frameworks</strong> with a main focus on the <em>AC</em> paradigm</li>
+<li>Design and prototype a <strong>framework</strong> for the pulverisation approach to be <em>modular</em>, <em>extensible</em> and support different targets</li>
+<li>Extends the pulverization approach to support <strong>dynamic reconfiguration</strong> of the system, then implement it in the framework</li>
+<li>Extends the <em>reconfiguration</em> model to support <strong>AI-based</strong> reconfiguration at runtime to adapt to dynamic changing scenarios</li>
+<li>Integrate the framework with <strong>AC frameworks</strong> like <em>ScaFi</em> and <em>Protelis</em> to provide a full-stack solution for CAS engineering</li>
+<li><strong>Data stream engineering</strong> on the continuum to support the computation of actuators from sensors stream on the framework</li>
 </ul>
 </section><section>
 <h1 id="long-term-contribution">Long term contribution</h1>
