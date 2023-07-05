@@ -24,7 +24,7 @@ weight = 1
 - _Coordination_[^1] as an effective way to achieve global goal in a distributed system
     - **Message passing** 
     - **Tuple space models**[^2]
-    - **Stigmergy models**
+    - **Stigmergy models**[^3]
 - _Aggregate Computing_[^4] paradigm as an approach to _engineer_ Collective Adaptive Systems (frameworks like _ScaFi_[^5] and _Protelis_[^6])
 {{< /col >}}
 
