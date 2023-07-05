@@ -78,7 +78,7 @@ A (logical) _device_ is decomposed into **five** components that can be _indepen
 - _Dynamic reconfiguration_ based on _AI_ techniques (e.g., _reinforcement learning_).
 - _Distributed intelligence_ from two differen perspective: **Application** level, **Infrastructural** level
 - Suitable for scenarios where the context is _dynamic_ and _unpredictable_ but **QoS** metrics are known
-- More general an potentially _more effective_ than rule-based reconfiguration
+- More general and potentially _more effective_ than rule-based reconfiguration
 
 {{% /col %}}
 
@@ -99,6 +99,8 @@ A (logical) _device_ is decomposed into **five** components that can be _indepen
 
 {{% /multicol %}}
 
+**Dynamic reconfiguration** is a key aspect for _energy efficiency_, _carbon footprint_ reduction, and _QoS_ improvement.
+
 ---
 
 # Bridge the gap between simulation and real world
@@ -106,10 +108,15 @@ A (logical) _device_ is decomposed into **five** components that can be _indepen
 {{% multicol %}}
 {{% col %}}
 
-- **Pulverisation framework**: concretize the pulverisation approach via a dedicated framework
-- Framework _integration_ with simulator(s): allow to simulate the system before its deployment
-- _Methodology_ and _techniques_: provide a full-stack solution to engineer CAS effectively
-- _Relevant scenarios_: identify and study relevant scenarios and case studies where the approach can be applied (wearable devices, smart cities, etc.)
+- Prototype a framework supporting the _pulverisation_ approach
+- Integration of the framework with _simulators_ to allow to simulate the system before its deployment
+- Provide a _methodology_ and _techniques_ for a full-stack solution to engineer CAS effectively
+
+In many applicative scenrios like _smart cities_, _ambient intelligence_, _building automation_ and so on,
+the unpredictable nature of the environment makes it difficult to _predict_ the behavior of the system.
+
+For this reason, having a full-stack solution that enable to _simulate_ the system before its deployment could be strategic.
+
 {{% /col %}}
 
 {{% col %}}
@@ -126,7 +133,7 @@ A (logical) _device_ is decomposed into **five** components that can be _indepen
 {{% col %}}
 - _IoT_ devices generate a huge amount of **data** from many different sources
 - The _efficient_ and _effective_ management of data streams is an open issue, especially in _edge-cloud_ environments
-- Engineer the _data stream_ on the continuum to enable external data analysis (i.e. with big-data techniques)
+- Engineer the _data stream_ on the continuum to provide more effective big-data storage/analysis but also control to distributed actuators
 {{% /col %}}
 
 {{% col %}}
@@ -140,10 +147,11 @@ A (logical) _device_ is decomposed into **five** components that can be _indepen
 
 # Expected results
 
-- **Pulverisation framework**: concretize the pulverisation approach via a dedicated _framework_
-- **Rule-based** and **AI-based** dynamic _reconfiguration_ of the system
-- **Data stream engineering** on the continuum
-- **Integration with CAS frameworks** with a main focus on the _AC_ paradigm
+- Design and prototype a **framework** for the pulverisation approach to be _modular_, _extensible_ and support different targets
+- Extends the pulverization approach to support **dynamic reconfiguration** of the system, then implement it in the framework
+- Extends the _reconfiguration_ model to support **AI-based** reconfiguration at runtime to adapt to dynamic changing scenarios
+- Integrate the framework with **AC frameworks** like _ScaFi_ and _Protelis_ to provide a full-stack solution for CAS engineering
+- **Data stream engineering** on the continuum to support the computation of actuators from sensors stream on the framework
 
 ---
 
