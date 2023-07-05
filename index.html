@@ -68,28 +68,31 @@
 <h1 id="project-description">Project description</h1>
 </section><section>
 <h1 id="extends-the-pulverisation-approach">Extends the Pulverisation approach</h1>
-<p><strong>Pulverisation</strong> approach for engineering collective systems by neatly separate the <em>business logic</em> from <em>deployment aspects</em>.</p>
-<p>A (logical) <em>device</em> is decomposed into <strong>five</strong> components that can be <em>independently</em> deployed in the infrastructure.</p>
+<p><strong>Pulverisation</strong> approach for engineering collective systems by neatly separate the <em>business logic</em> from <em>deployment aspects</em>.<br>
+A (logical) <em>device</em> is decomposed into <strong>five</strong> components that can be <em>independently</em> deployed in the infrastructure.</p>
 <div class="multiCol ">
-<div class="col "><p>Extensions meant to be pursued in the project:</p>
+<div class="col "><!-- Extensions meant to be pursued in the project: -->
+<h3 id="rule-based-reconfiguration">Rule-based reconfiguration</h3>
 <ul>
-<li>Support <em>Dynamic renfiguration</em> of the system:
-<ul>
-<li><strong>Rules-based</strong>: a priori defined rules based on well-known patterns</li>
-<li><strong>AI-based</strong>: policy learned during the system execution to adapt the system to specific <em>QoS</em> requirements</li>
+<li>Define reconfiguration rules that can <em>move</em> components into different infrastructure nodes.</li>
+<li>Suitable for a priori defined rules based on <em>well-known patterns</em> and <em>specific conditions</em> known at design time.</li>
 </ul>
-</li>
-<li>Support <em>openness</em>: allow the system to adapt to the add of new devices and infrastructure nodes</li>
+<h3 id="ai-based-reconfiguration">AI-based reconfiguration</h3>
+<ul>
+<li><em>Dynamic reconfiguration</em> based on <em>AI</em> techniques (e.g., <em>reinforcement learning</em>).</li>
+<li><em>Distributed knowledge</em> from two differen perspective: <strong>Application</strong> level, <strong>Infrastructural</strong> level</li>
+<li>Suitable for scenarios where the context is <em>dynamic</em> and <em>unpredictable</em> but <strong>QoS</strong> metrics are known</li>
+<li>More general an potentially <em>more effective</em> than rule-based reconfiguration</li>
 </ul>
 </div>
-<div class="col "><figure><img src="images/pulverization-model.svg" width="60%">
+<div class="col "><figure><img src="images/pulverization-model.svg" width="70%">
 </figure>
-<div class="multiCol "><div class="col "><figure><img src="images/cloud.svg" alt="Edge-cloud deployment" width="50%"><figcaption>
+<div class="multiCol "><div class="col "><figure><img src="images/cloud.svg" alt="Edge-cloud deployment" width="60%"><figcaption>
             <p><b>Edge-cloud</b> deployment</p>
         </figcaption>
 </figure>
 </div>
-<div class="col "><figure><img src="images/peer-to-peer.svg" alt="Peer-to-peer deployment" width="50%"><figcaption>
+<div class="col "><figure><img src="images/peer-to-peer.svg" alt="Peer-to-peer deployment" width="60%"><figcaption>
             <p><b>Peer-to-peer</b> deployment</p>
         </figcaption>
 </figure>
