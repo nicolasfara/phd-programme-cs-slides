@@ -11,6 +11,48 @@ weight = 1
 
 ---
 
+# State of the Art
+
+<!-- Many different _approches_ are proposed in the literature to tackle the complexity of **cloud-edge** systems. -->
+
+{{% multicol %}}
+
+{{< col >}}
+<h3>Collective Adaptive Systems</h3>
+
+- Several entities that _interact_ with each other to achieve a _common goal_
+- _Coordination_[^1] as an effective way to achieve global goal in a distributed system
+    - **Message passing** 
+    - **Tuple space models**[^2]
+    - **Stigmergy models**
+- _Aggregate Computing_[^4] paradigm as an approach to _engineer_ Collective Adaptive Systems (frameworks like _ScaFi_[^5] and _Protelis_[^6])
+{{< /col >}}
+
+{{< col >}}
+<h3>Edge-Cloud continuum</h3>
+
+- _Osmotic Computing_[^7] general approach main focused on microservices architectures which aims to maintain an osmotic equilibrium
+- _Multi-tier programming_[^8] as a way to write application that span across multiple tiers into a single compilation unit
+- _Component-based_[^9] distributed software as a way to decompose the system into _components_ that can be independently deployed and reconfigured
+- _Pulverization_[^10] as an approach to neatly separate the _business logic_ from _deployment aspects_ by decomposing a (logical) _device_ into **five** components
+
+{{< /col >}}
+
+{{% /multicol %}}
+
+[^1]: [Paolo Ciancarini. "Coordination Models and Languages as Software Integrators"](https://doi.org/10.1145/234528.234732)
+[^2]: [Davide Rossi, Giacomo Cabri, and Enrico Denti. "Tuple-based Technologies for Coordination"]()
+[^3]: [Francis Heylighen. "Stigmergy as a universal coordination mechanism: Definition and components"](https://doi.org/10.1016/j.cogsys.2015.12.002)
+[^4]: [Jacob Beal, Danilo Pianini, and Mirko Viroli. "Aggregate Programming for the Internet of Things"](https://doi.org/10.1109/MC.2015.261)
+[^5]: [Roberto Casadei et al. "ScaFi: A Scala DSL and Toolkit for Aggregate Programming"](https://doi.org/10.1016/j.softx.2022.101248)
+[^6]: [Danilo Pianini, Mirko Viroli, and Jacob Beal. "Protelis: practical aggregate programming"](https://doi.org/10.1145/2695664.2695913)
+[^7]: [Benazir Neha et al. "A Systematic Review on Osmotic Computing"](https://doi.org/10.1145/3488247)
+[^8]: [Pascal Weisenburger, Johannes Wirth, and Guido Salvaneschi. "A Survey of Multitier Programming"](https://doi.org/10.1145/3397495)
+[^9]: [Hélène Coullon et al. "Component-Based Distributed Software Reconfiguration: A Verification-Oriented Survey"](https://doi.org/10.1145/3595376)
+[^10]: [Roberto Casadei et al. "Pulverization in Cyber-Physical Systems: Engineering the Self-Organizing Logic Separated from Deployment"](https://doi.org/10.3390/fi12110203)
+
+---
+
 # Project description
 
 ---
