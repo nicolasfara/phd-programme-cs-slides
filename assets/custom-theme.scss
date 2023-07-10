@@ -32,7 +32,7 @@ $backgroundColor: #fff;
 $mainColor: #000;
 $headingColor: #111;
 
-$mainFontSize: 1.5em;
+$mainFontSize: 1.8em;
 // $mainFont: 'Roboto', sans-serif;
 // $headingFont: 'Roboto', sans-serif;
 // $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
@@ -198,8 +198,28 @@ h1, h2, h3, h4, h5, h6 {
 	flex: 1;
 	padding: 0.9em;
 	text-align: left;
-	align-self: center;
+	// align-self: center;
 
+	figure {
+		display: flex;
+		flex-direction: column;
+		// align-content: center;
+		// justify-content: center;
+		/* align horizontal */
+		// align-items: center;
+		/* align vertical */
+	}
+
+	figcaption p {
+		font-size: 0.5em;
+	}
+}
+
+.center-content {
+	flex: 1;
+	padding: 0.9em;
+	text-align: left;
+	align-self: center;
 	figure {
 		display: flex;
 		flex-direction: column;
@@ -209,12 +229,23 @@ h1, h2, h3, h4, h5, h6 {
 		align-items: center;
 		/* align vertical */
 	}
-
-	figcaption p {
-		font-size: 0.5em;
-	}
 }
 
+
 li:not(:last-child) {
-    margin-bottom: 1.3em;
+    margin-bottom: 0.4em;
+}
+
+.shrink {
+	padding-left: 8em;
+	padding-right: 8em;
+}
+
+a[href^="#fn:"]:before{ content: '[' }
+a[href^="#fn:"]:after{ content: ']' }
+a[href^="#fn:"],
+// Back to footnote link
+a[href^="#fnref:"] {
+  text-decoration: none;
+  font-family: monospace;
 }
