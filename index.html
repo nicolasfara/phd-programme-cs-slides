@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><link rel="stylesheet" href="/phd-programme-cs-slides/reveal-js/dist/reset.css">
 <link rel="stylesheet" href="/phd-programme-cs-slides/reveal-js/dist/reveal.css">
-  <link rel="stylesheet" href="/phd-programme-cs-slides/css/custom-theme.min.33a55b26a8e35c649ea6a558acbd396925f03a1a0814d240346cc047ae49669f.css" id="theme"><link rel="stylesheet" href="/phd-programme-cs-slides/highlight-js/solarized-dark.min.css">
+  <link rel="stylesheet" href="/phd-programme-cs-slides/css/custom-theme.min.7b744cc44581a530d06b3f2496183e533360331fc2941bba188d8eb681826953.css" id="theme"><link rel="stylesheet" href="/phd-programme-cs-slides/highlight-js/solarized-dark.min.css">
 <link rel="stylesheet" href="https://gitcdn.link/repo/DanySK/css-blur-animation/master/blur.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Oxygen Mono" rel="stylesheet">
@@ -30,12 +30,14 @@
   
 
     <section><h1 id="context">Context</h1>
+<div class="shrink ">
 <ul>
 <li>Modern <strong>CPS</strong> are characterized by a <em>high heterogeneity</em> in terms of devices, communication technologies, and infrastructure</li>
 <li>The <em>edge-cloud continuum</em> is a promising solution to address the <em>scalability</em> and <em>dynamicity</em></li>
 <li>Complexity of the system is increasing, and the <em>engineering</em> of such systems is becoming a challenge</li>
 <li>Many approaches are proposed in the literature: <strong>pulverisation</strong> is one of them in the context of <em>Collective Adaptive Systems</em></li>
 </ul>
+</div>
 </section><section>
 <h1 id="state-of-the-art">State of the Art</h1>
 <!-- Many different _approches_ are proposed in the literature to tackle the complexity of **cloud-edge** systems. -->
@@ -46,21 +48,21 @@
 <li>Several entities that <em>interact</em> with each other to achieve a <em>common goal</em></li>
 <li><em>Coordination</em><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> as an effective way to achieve global goal in a distributed system
 <ul>
-<li><strong>Message passing</strong></li>
-<li><strong>Tuple space models</strong><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></li>
-<li><strong>Stigmergy models</strong><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
+<li><strong>Message passing</strong><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></li>
+<li><strong>Tuple space models</strong><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
+<li><strong>Stigmergy models</strong><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></li>
 </ul>
 </li>
-<li><em>Aggregate Computing</em><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> paradigm as an approach to <em>engineer</em> Collective Adaptive Systems (frameworks like <em>ScaFi</em><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> and <em>Protelis</em><sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>)</li>
+<li><em>Aggregate Computing</em><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> paradigm as an approach to <em>engineer</em> Collective Adaptive Systems (frameworks like <em>ScaFi</em><sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> and <em>Protelis</em><sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>)</li>
 </ul>
 </div>
 <div class="col ">
 <h3>Edge-Cloud continuum</h3>
 <ul>
-<li><em>Osmotic Computing</em><sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> general approach main focused on microservices architectures which aims to maintain an osmotic equilibrium</li>
-<li><em>Multi-tier programming</em><sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> as a way to write application that span across multiple tiers into a single compilation unit</li>
-<li><em>Component-based</em><sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup> distributed software as a way to decompose the system into <em>components</em> that can be independently deployed and reconfigured</li>
-<li><em>Pulverization</em><sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> as an approach to neatly separate the <em>business logic</em> from <em>deployment aspects</em> by decomposing a (logical) <em>device</em> into <strong>five</strong> components</li>
+<li><em>Osmotic Computing</em><sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> approach focused on microservices architectures which aims to maintain an osmotic equilibrium</li>
+<li><em>Multi-tier programming</em><sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup> as a way to write application that span across multiple tiers into a single compilation unit</li>
+<li><em>Component-based</em><sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> a way to decompose the system into <em>components</em> that can be independently deployed and reconfigured</li>
+<li><em>Pulverization</em><sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup> as an approach to neatly separate the <em>business logic</em> from <em>deployment aspects</em> by decomposing a (logical) <em>device</em> into <strong>five</strong> components</li>
 </ul>
 </div>
 </div>
@@ -68,31 +70,30 @@
 <h1 id="project-description">Project description</h1>
 </section><section>
 <h1 id="extends-the-pulverisation-approach">Extends the Pulverisation approach</h1>
-<p><strong>Pulverisation</strong> approach for engineering collective systems by neatly separate the <em>business logic</em> from <em>deployment aspects</em>.<br>
-A (logical) <em>device</em> is decomposed into <strong>five</strong> components that can be <em>independently</em> deployed in the infrastructure.</p>
+<!-- **Pulverisation** approach for engineering collective systems by neatly separate the _business logic_ from _deployment aspects_.   -->
+<!-- **Pulverization**: a (logical) _device_ is decomposed into **five** components that can be _independently_ deployed in the infrastructure. -->
 <div class="multiCol ">
 <div class="col "><!-- Extensions meant to be pursued in the project: -->
 <h3 id="rule-based-reconfiguration">Rule-based reconfiguration</h3>
 <ul>
 <li>Define reconfiguration rules that can <em>move</em> components into different infrastructure nodes.</li>
-<li>Suitable for a priori defined rules based on <em>well-known patterns</em> and <em>specific conditions</em> known at design time.</li>
+<li>Suitable for a priori defined rules based on <em>well-known patterns</em> and <em>specific conditions</em>.</li>
 </ul>
 <h3 id="ai-based-reconfiguration">AI-based reconfiguration</h3>
 <ul>
 <li><em>Dynamic reconfiguration</em> based on <em>AI</em> techniques (e.g., <em>reinforcement learning</em>).</li>
-<li><em>Distributed intelligence</em> from two differen perspective: <strong>Application</strong> level, <strong>Infrastructural</strong> level</li>
+<li><em>Distributed intelligence</em> from two differen perspective: <strong>Application</strong> and <strong>Infrastructural</strong></li>
 <li>Suitable for scenarios where the context is <em>dynamic</em> and <em>unpredictable</em> but <strong>QoS</strong> metrics are known</li>
-<li>More general and potentially <em>more effective</em> than rule-based reconfiguration</li>
 </ul>
 </div>
-<div class="col "><figure><img src="images/pulverization-model.svg" width="70%">
+<div class="col center-content"><figure><img src="images/pulverization-model.svg" width="70%">
 </figure>
-<div class="multiCol "><div class="col "><figure><img src="images/cloud.svg" alt="Edge-cloud deployment" width="60%"><figcaption>
+<div class="multiCol "><div class="col center-content"><figure><img src="images/cloud.svg" alt="Edge-cloud deployment" width="60%"><figcaption>
             <p><b>Edge-cloud</b> deployment</p>
         </figcaption>
 </figure>
 </div>
-<div class="col "><figure><img src="images/peer-to-peer.svg" alt="Peer-to-peer deployment" width="60%"><figcaption>
+<div class="col center-content"><figure><img src="images/peer-to-peer.svg" alt="Peer-to-peer deployment" width="63%"><figcaption>
             <p><b>Peer-to-peer</b> deployment</p>
         </figcaption>
 </figure>
@@ -109,11 +110,11 @@ A (logical) <em>device</em> is decomposed into <strong>five</strong> components 
 <li>Integration of the framework with <em>simulators</em> to allow to simulate the system before its deployment</li>
 <li>Provide a <em>methodology</em> and <em>techniques</em> for a full-stack solution to engineer CAS effectively</li>
 </ul>
-<p>In many applicative scenrios like <em>smart cities</em>, <em>ambient intelligence</em>, <em>building automation</em> and so on,
+<p>In many applicative scenarios like <em>smart cities</em>, <em>ambient intelligence</em>, <em>building automation</em> and so on,
 the unpredictable nature of the environment makes it difficult to <em>predict</em> the behavior of the system.</p>
-<p>For this reason, having a full-stack solution that enable to <em>simulate</em> the system before its deployment could be strategic.</p>
+<!-- For this reason, having a full-stack solution that enable to _simulate_ the system before its deployment could be strategic. -->
 </div>
-<div class="col "><figure><img src="images/phd-proposal.drawio.png" width="80%">
+<div class="col center-content"><figure><img src="images/phd-proposal.drawio.png" width="80%">
 </figure>
 </div>
 </div>
@@ -123,15 +124,16 @@ the unpredictable nature of the environment makes it difficult to <em>predict</e
 <div class="col "><ul>
 <li><em>IoT</em> devices generate a huge amount of <strong>data</strong> from many different sources</li>
 <li>The <em>efficient</em> and <em>effective</em> management of data streams is an open issue, especially in <em>edge-cloud</em> environments</li>
-<li>Engineer the <em>data stream</em> on the continuum to provide more effective big-data storage/analysis but also control to distributed actuators</li>
+<li>Engineer the <em>data stream</em> on the continuum to provide more effective control of distributed actuators, and also improved cloud-edge data storage/analysis</li>
 </ul>
 </div>
-<div class="col "><figure><img src="images/data-stream.drawio.png">
+<div class="col center-content"><figure><img src="images/data-stream.drawio.png">
 </figure>
 </div>
 </div>
 </section><section>
 <h1 id="expected-results">Expected results</h1>
+<div class="shrink ">
 <ul>
 <li>Design and prototype a <strong>framework</strong> for the pulverisation approach to be <em>modular</em>, <em>extensible</em> and support different targets</li>
 <li>Extends the pulverization approach to support <strong>dynamic reconfiguration</strong> of the system, then implement it in the framework</li>
@@ -139,14 +141,17 @@ the unpredictable nature of the environment makes it difficult to <em>predict</e
 <li>Integrate the framework with <strong>AC frameworks</strong> like <em>ScaFi</em> and <em>Protelis</em> to provide a full-stack solution for CAS engineering</li>
 <li><strong>Data stream engineering</strong> on the continuum to support the computation of actuators from sensors stream on the framework</li>
 </ul>
+</div>
 </section><section>
 <h1 id="long-term-contribution">Long term contribution</h1>
+<div class="shrink ">
 <ul>
 <li>Provide new <em>approaches</em> and <em>solutions</em> to challenges in the research community (focus on CAS)</li>
 <li>Understand the role of <strong>CAS</strong> in modern scenarios like <em>smart cities</em> and <em>large-scale IoT systems</em></li>
 <li>Provide reference implementations of the proposed approaches</li>
 <li>Groundwork for creating systems in the <em>edge-cloud continuum</em> with a focus on <strong>dynamicity</strong> and <strong>self-adaptation</strong>.</li>
 </ul>
+</div>
 <div class="footnotes" role="doc-endnotes">
 </div></section><section>
 <ol>
@@ -154,31 +159,34 @@ the unpredictable nature of the environment makes it difficult to <em>predict</e
 <p><a href="https://doi.org/10.1145/234528.234732">Paolo Ciancarini. “Coordination Models and Languages as Software Integrators”</a>&nbsp;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">↩︎</a></p>
 </li>
 <li id="fn:2">
-<p><a href="">Davide Rossi, Giacomo Cabri, and Enrico Denti. “Tuple-based Technologies for Coordination”</a>&nbsp;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+<p><a href="https://doi.org/10.1145/2827695">Kohei Honda et al. “Multiparty Asynchronous Session Types”</a>&nbsp;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">↩︎</a></p>
 </li>
 <li id="fn:3">
-<p><a href="https://doi.org/10.1016/j.cogsys.2015.12.002">Francis Heylighen. “Stigmergy as a universal coordination mechanism: Definition and components”</a>&nbsp;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+<p><a href="">Davide Rossi, Giacomo Cabri, and Enrico Denti. “Tuple-based Technologies for Coordination”</a>&nbsp;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">↩︎</a></p>
 </li>
 <li id="fn:4">
-<p><a href="https://doi.org/10.1109/MC.2015.261">Jacob Beal, Danilo Pianini, and Mirko Viroli. “Aggregate Programming for the Internet of Things”</a>&nbsp;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+<p><a href="https://doi.org/10.1016/j.cogsys.2015.12.002">Francis Heylighen. “Stigmergy as a universal coordination mechanism: Definition and components”</a>&nbsp;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">↩︎</a></p>
 </li>
 <li id="fn:5">
-<p><a href="https://doi.org/10.1016/j.softx.2022.101248">Roberto Casadei et al. “ScaFi: A Scala DSL and Toolkit for Aggregate Programming”</a>&nbsp;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+<p><a href="https://doi.org/10.1109/MC.2015.261">Jacob Beal, Danilo Pianini, and Mirko Viroli. “Aggregate Programming for the Internet of Things”</a>&nbsp;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">↩︎</a></p>
 </li>
 <li id="fn:6">
-<p><a href="https://doi.org/10.1145/2695664.2695913">Danilo Pianini, Mirko Viroli, and Jacob Beal. “Protelis: practical aggregate programming”</a>&nbsp;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+<p><a href="https://doi.org/10.1016/j.softx.2022.101248">Roberto Casadei et al. “ScaFi: A Scala DSL and Toolkit for Aggregate Programming”</a>&nbsp;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">↩︎</a></p>
 </li>
 <li id="fn:7">
-<p><a href="https://doi.org/10.1145/3488247">Benazir Neha et al. “A Systematic Review on Osmotic Computing”</a>&nbsp;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+<p><a href="https://doi.org/10.1145/2695664.2695913">Danilo Pianini, Mirko Viroli, and Jacob Beal. “Protelis: practical aggregate programming”</a>&nbsp;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">↩︎</a></p>
 </li>
 <li id="fn:8">
-<p><a href="https://doi.org/10.1145/3397495">Pascal Weisenburger, Johannes Wirth, and Guido Salvaneschi. “A Survey of Multitier Programming”</a>&nbsp;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+<p><a href="https://doi.org/10.1145/3488247">Benazir Neha et al. “A Systematic Review on Osmotic Computing”</a>&nbsp;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">↩︎</a></p>
 </li>
 <li id="fn:9">
-<p><a href="https://doi.org/10.1145/3595376">Hélène Coullon et al. “Component-Based Distributed Software Reconfiguration: A Verification-Oriented Survey”</a>&nbsp;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+<p><a href="https://doi.org/10.1145/3397495">Pascal Weisenburger, Johannes Wirth, and Guido Salvaneschi. “A Survey of Multitier Programming”</a>&nbsp;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">↩︎</a></p>
 </li>
 <li id="fn:10">
-<p><a href="https://doi.org/10.3390/fi12110203">Roberto Casadei et al. “Pulverization in Cyber-Physical Systems: Engineering the Self-Organizing Logic Separated from Deployment”</a>&nbsp;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+<p><a href="https://doi.org/10.1145/3595376">Hélène Coullon et al. “Component-Based Distributed Software Reconfiguration: A Verification-Oriented Survey”</a>&nbsp;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:11">
+<p><a href="https://doi.org/10.3390/fi12110203">Roberto Casadei et al. “Pulverization in Cyber-Physical Systems: Engineering the Self-Organizing Logic Separated from Deployment”</a>&nbsp;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">↩︎</a></p>
 </li>
 </ol>
 </section></div>
@@ -311,6 +319,8 @@ the unpredictable nature of the environment makes it difficult to <em>predict</e
       }
   }
 </script>
+
+<script src="js/references.js"></script>
 
 
     
